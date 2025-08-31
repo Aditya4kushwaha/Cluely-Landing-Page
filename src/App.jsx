@@ -7,11 +7,11 @@ import Pricing from "./components/Pricing";
 
 export default function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <HeroSection />
       <Pricing />
       <EnterpriseSection/>
       <Footer/>
-    </>
+    </div>
   );
 }

@@ -11,15 +11,15 @@ const FooterLink = ({ href, children }) => (
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#E1E4EF] pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+    <footer className="w-full bg-[#E1E4EF] pt-12 sm:pt-16 pb-6 sm:pb-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
-          <div className="col-span-2 md:col-span-1 mb-8 md:mb-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8">
+          <div className="col-span-1 sm:col-span-2 md:col-span-1 mb-6 sm:mb-8 md:mb-0">
             <img src={cluelyLogo} alt="Cluely Logo" className="h-7" />
           </div>
 
-          <div className="space-y-4">
-            <h3 className="cursor-pointer font-semibold text-gray-900">
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="cursor-pointer font-semibold text-gray-900 text-sm sm:text-base">
               Use Cases
             </h3>
             <div className="flex flex-col space-y-2 text-sm">
@@ -30,8 +30,10 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h3 className="cursor-pointer font-semibold text-gray-900">Enterprise</h3>
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="cursor-pointer font-semibold text-gray-900 text-sm sm:text-base">
+              Enterprise
+            </h3>
             <div className="flex flex-col space-y-2 text-sm">
               <FooterLink>Cluely for Enterprise</FooterLink>
               <FooterLink>Enterprise Security</FooterLink>
@@ -41,8 +43,10 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h3 className="cursor-pointer font-semibold text-gray-900">Resources</h3>
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="cursor-pointer font-semibold text-gray-900 text-sm sm:text-base">
+              Resources
+            </h3>
             <div className="flex flex-col space-y-2 text-sm">
               <FooterLink>Pricing</FooterLink>
               <FooterLink>Manifesto</FooterLink>
@@ -52,15 +56,20 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h3 className="cursor-pointer font-semibold text-gray-900">Support</h3>
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="cursor-pointer font-semibold text-gray-900 text-sm sm:text-base">
+              Support
+            </h3>
             <div className="flex flex-col space-y-2 text-sm">
               <FooterLink>Help Center</FooterLink>
               <FooterLink>Contact Us</FooterLink>
             </div>
           </div>
-          <div className="space-y-4">
-            <h3 className="cursor-pointer font-semibold text-gray-900">Legal</h3>
+          
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="cursor-pointer font-semibold text-gray-900 text-sm sm:text-base">
+              Legal
+            </h3>
             <div className="flex flex-col space-y-2 text-sm">
               <FooterLink>Privacy Policy</FooterLink>
               <FooterLink>Terms of Service</FooterLink>
@@ -70,16 +79,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 border-t border-gray-300 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm">
-          <p className="text-gray-500 order-2 sm:order-1 mt-4 sm:mt-0">
+        <div className="mt-12 sm:mt-16 border-t border-gray-300 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center text-sm space-y-4 sm:space-y-0">
+          <p className="text-gray-500 order-2 sm:order-1">
             © 2025 Cluely. All rights reserved.
           </p>
 
-          <p className="text-gray-500 order-1 sm:order-2 mt-4 sm:mt-0">
+          <p className="text-gray-500 order-1 sm:order-2">
             Made with <span className="text-red-500">❤️</span> by AdityaXdev
           </p>
 
-          <div className="flex space-x-4 text-gray-500 order-3 mt-4 sm:mt-0">
+          <div className="flex space-x-4 text-gray-500 order-3">
             <FooterLink
               href="https://x.com/adityakush_04"
               target="_blank"

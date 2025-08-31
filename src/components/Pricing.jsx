@@ -15,13 +15,13 @@ export default function Pricing() {
   return (
     <div
       id="pricing"
-      className="w-full bg-[#E1E4EF] py-20 px-4 sm:px-6 lg:px-8"
+      className="w-full bg-[#E1E4EF] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="rounded-2xl p-8 flex flex-col bg-gray-50/80 border border-gray-200 shadow-sm backdrop-blur-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="rounded-2xl p-6 sm:p-8 flex flex-col bg-gray-50/80 border border-gray-200 shadow-sm backdrop-blur-sm">
             <h3 className="text-lg font-semibold text-gray-800">Starter</h3>
-            <p className="mt-4 text-4xl font-extrabold tracking-tight text-gray-900">
+            <p className="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
               Free
             </p>
 
@@ -53,7 +53,7 @@ export default function Pricing() {
               All essential features to get you started.
             </p>
 
-            <ul role="list" className="mt-8 space-y-3 text-sm">
+            <ul role="list" className="mt-6 sm:mt-8 space-y-3 text-sm">
               <li className="flex space-x-3">
                 <Check className="flex-shrink-0 h-5 w-5 text-green-500" />
                 <span className="text-gray-700 flex items-center">
@@ -85,18 +85,23 @@ export default function Pricing() {
           </div>
 
           <div
-            className="rounded-2xl p-8 flex flex-col bg-gray-50/90 border border-gray-200 shadow-lg backdrop-blur-sm relative"
+            className="rounded-2xl p-6 sm:p-8 flex flex-col bg-gray-50/90 border border-gray-200 shadow-lg backdrop-blur-sm relative order-first md:order-none"
             style={{
               backgroundImage:
                 "radial-gradient(ellipse 100% 80% at 50% -20%, rgba(255,255,255,0.9), transparent)",
             }}
           >
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+              <span className="bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Most Popular
+              </span>
+            </div>
             <h3 className="text-lg font-semibold text-gray-800">Pro</h3>
             <div className="mt-4 flex items-baseline text-gray-900">
-              <span className="text-4xl font-extrabold tracking-tight">
+              <span className="text-3xl sm:text-4xl font-extrabold tracking-tight">
                 $20
               </span>
-              <span className="ml-1 text-xl font-semibold">/ month</span>
+              <span className="ml-1 text-lg sm:text-xl font-semibold">/ month</span>
             </div>
 
             <button className="cursor-pointer mt-6 w-full bg-gray-900 text-white font-semibold py-3 rounded-lg hover:bg-gray-800 transition-colors">
@@ -106,7 +111,7 @@ export default function Pricing() {
             <p className="mt-6 text-sm text-gray-600 min-h-[40px]">
               Unlimited access to all of Cluely for individuals.
             </p>
-            <p className="mt-8 font-semibold text-gray-800 text-sm">
+            <p className="mt-6 sm:mt-8 font-semibold text-gray-800 text-sm">
               Everything in Starter, plus...
             </p>
 
@@ -136,14 +141,14 @@ export default function Pricing() {
           </div>
 
           <div
-            className="rounded-2xl p-8 flex flex-col bg-gray-50/90 border border-gray-200 shadow-lg backdrop-blur-sm relative"
+            className="rounded-2xl p-6 sm:p-8 flex flex-col bg-gray-50/90 border border-gray-200 shadow-lg backdrop-blur-sm relative"
             style={{
               backgroundImage:
                 "radial-gradient(ellipse 100% 80% at 50% -20%, rgba(255,255,255,0.9), transparent)",
             }}
           >
             <h3 className="text-lg font-semibold text-gray-800">Enterprise</h3>
-            <p className="mt-4 text-4xl font-extrabold tracking-tight text-gray-900">
+            <p className="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
               Custom
             </p>
 
@@ -154,7 +159,7 @@ export default function Pricing() {
             <p className="mt-6 text-sm text-gray-600 min-h-[40px]">
               Call superpowers and custom knowledge for teams.
             </p>
-            <p className="mt-8 font-semibold text-gray-800 text-sm">
+            <p className="mt-6 sm:mt-8 font-semibold text-gray-800 text-sm">
               Everything in Pro, plus...
             </p>
 
