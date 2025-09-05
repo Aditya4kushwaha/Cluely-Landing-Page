@@ -2,7 +2,7 @@ import EnterpriseSection from "./components/Enterprice";
 import Footer from "./components/Footer";
 import HeroSection from "./components/Hero";
 import Pricing from "./components/Pricing";
-import './app.css'
+import './App.css'
 
 
 export default function App() {
